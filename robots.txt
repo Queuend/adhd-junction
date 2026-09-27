@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://adhdjunction.com/sitemap.xml
+Sitemap: https://adhdjunction.org/sitemap.xml

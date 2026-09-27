@@ -10,12 +10,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400..800&family=Source+Code+Pro:wght@400..700&family=Source+Sans+3:ital,wght@0,400..700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/queuend.css?v=29">
-  <script type="module" src="../assets/js/site-search.js?v=29"></script>
-  <link rel="icon" href="../assets/images/brand/adhd-junction-mark.svg?v=29" type="image/svg+xml">
-  <link rel="icon" href="../assets/images/brand/favicon-32x32.png?v=29" type="image/png" sizes="32x32">
-  <link rel="shortcut icon" href="../favicon.ico?v=29">
-  <link rel="apple-touch-icon" href="../assets/images/brand/apple-touch-icon.png?v=29" sizes="180x180">
+  <link rel="stylesheet" href="../assets/css/queuend.css?v=30">
+  <script type="module" src="../assets/js/site-search.js?v=30"></script>
+  <link rel="icon" href="../assets/images/brand/adhd-junction-mark.svg?v=30" type="image/svg+xml">
+  <link rel="icon" href="../assets/images/brand/favicon-32x32.png?v=30" type="image/png" sizes="32x32">
+  <link rel="shortcut icon" href="../favicon.ico?v=30">
+  <link rel="apple-touch-icon" href="../assets/images/brand/apple-touch-icon.png?v=30" sizes="180x180">
   <meta name="theme-color" content="#172533">
   <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"28d90a7c40454b4195ea47f30c95e50d"}'></script>
 </head>
@@ -65,12 +65,12 @@
         <div>
           <p class="eyebrow">OPTIONAL TOOL · ADULTS 18+</p>
           <h1>A brief adult ADHD screener.</h1>
-          <p class="screener-hero__standfirst">Six established questions that may help you decide whether ADHD is worth discussing with a qualified professional.</p>
-          <p class="screener-hero__alternate">Already know you want to examine the wider pattern? <a href="../reflection-record/">Skip this test and go straight to the ADHD reflection: interactive record <span aria-hidden="true">→</span></a></p>
+          <p class="screener-hero__standfirst">Use the official six-question ASRS v1.1 patient-facing screener, then return here to consider the wider pattern.</p>
+          <p class="screener-hero__alternate">Already know you want to examine the wider pattern? <a href="../reflection-record/">Go straight to the ADHD reflection: interactive record <span aria-hidden="true">→</span></a></p>
         </div>
         <aside class="screener-privacy">
-          <span aria-hidden="true">✓</span>
-          <div><p class="micro-label">PRIVATE BY DESIGN</p><p>Your answers are processed only in this browser window. They are not sent to ADHD Junction or stored by this tool.</p></div>
+          <span aria-hidden="true">↗</span>
+          <div><p class="micro-label">OFFICIAL SOURCE</p><p>The screener opens on the NYU licensing site, which provides the authorised patient-facing version and its conditions of use.</p></div>
         </aside>
       </div>
     </div>
@@ -78,92 +78,37 @@
 
   <section class="screener-caution">
     <div class="reading-column">
-      <p><strong>This is a screener, not a diagnosis.</strong> It does not measure the severity of ADHD, explain the cause of any difficulties or replace a full clinical assessment. You can skip it and continue to the <a href="../assessment-routes/">assessment routes</a>.</p>
+      <p><strong>This is a screener, not a diagnosis.</strong> It cannot measure the severity of ADHD, explain the cause of any difficulties or replace a full clinical assessment. You can instead continue to the <a href="../assessment-routes/">assessment routes</a>.</p>
     </div>
   </section>
 
   <section class="screener-tool" aria-labelledby="screener-title">
     <div class="wide-column">
       <header class="screener-tool__header">
-        <div><p class="micro-label">ASRS v1.1 · PART A</p><h2 id="screener-title">Think about the past six months.</h2></div>
-        <p>For each question, choose the answer that best describes how you have felt and conducted yourself.</p>
+        <div><p class="micro-label">ASRS v1.1 · PART A</p><h2 id="screener-title">Open the authorised patient-facing screener.</h2></div>
+        <p>The six questions, answer shading and scoring instructions are supplied by the instrument’s licensors. ADHD Junction does not reproduce or score the instrument on this page.</p>
       </header>
-
-      <form id="adhd-screener" novalidate>
-        <fieldset class="screener-question" data-question>
-          <legend><span>01</span>How often do you have trouble wrapping up the final details of a project, once the challenging parts have been done?</legend>
-          <div class="screener-options">
-            <label><input type="radio" name="q1" value="0"><span>Never</span></label><label><input type="radio" name="q1" value="1"><span>Rarely</span></label><label><input type="radio" name="q1" value="2"><span>Sometimes</span></label><label><input type="radio" name="q1" value="3"><span>Often</span></label><label><input type="radio" name="q1" value="4"><span>Very often</span></label>
-          </div>
-        </fieldset>
-
-        <fieldset class="screener-question" data-question>
-          <legend><span>02</span>How often do you have difficulty getting things in order when you have to do a task that requires organisation?</legend>
-          <div class="screener-options">
-            <label><input type="radio" name="q2" value="0"><span>Never</span></label><label><input type="radio" name="q2" value="1"><span>Rarely</span></label><label><input type="radio" name="q2" value="2"><span>Sometimes</span></label><label><input type="radio" name="q2" value="3"><span>Often</span></label><label><input type="radio" name="q2" value="4"><span>Very often</span></label>
-          </div>
-        </fieldset>
-
-        <fieldset class="screener-question" data-question>
-          <legend><span>03</span>How often do you have problems remembering appointments or obligations?</legend>
-          <div class="screener-options">
-            <label><input type="radio" name="q3" value="0"><span>Never</span></label><label><input type="radio" name="q3" value="1"><span>Rarely</span></label><label><input type="radio" name="q3" value="2"><span>Sometimes</span></label><label><input type="radio" name="q3" value="3"><span>Often</span></label><label><input type="radio" name="q3" value="4"><span>Very often</span></label>
-          </div>
-        </fieldset>
-
-        <fieldset class="screener-question" data-question>
-          <legend><span>04</span>When you have a task that requires a lot of thought, how often do you avoid or delay getting started?</legend>
-          <div class="screener-options">
-            <label><input type="radio" name="q4" value="0"><span>Never</span></label><label><input type="radio" name="q4" value="1"><span>Rarely</span></label><label><input type="radio" name="q4" value="2"><span>Sometimes</span></label><label><input type="radio" name="q4" value="3"><span>Often</span></label><label><input type="radio" name="q4" value="4"><span>Very often</span></label>
-          </div>
-        </fieldset>
-
-        <fieldset class="screener-question" data-question>
-          <legend><span>05</span>How often do you fidget or squirm with your hands or feet when you have to sit down for a long time?</legend>
-          <div class="screener-options">
-            <label><input type="radio" name="q5" value="0"><span>Never</span></label><label><input type="radio" name="q5" value="1"><span>Rarely</span></label><label><input type="radio" name="q5" value="2"><span>Sometimes</span></label><label><input type="radio" name="q5" value="3"><span>Often</span></label><label><input type="radio" name="q5" value="4"><span>Very often</span></label>
-          </div>
-        </fieldset>
-
-        <fieldset class="screener-question" data-question>
-          <legend><span>06</span>How often do you feel overly active and compelled to do things, like you were driven by a motor?</legend>
-          <div class="screener-options">
-            <label><input type="radio" name="q6" value="0"><span>Never</span></label><label><input type="radio" name="q6" value="1"><span>Rarely</span></label><label><input type="radio" name="q6" value="2"><span>Sometimes</span></label><label><input type="radio" name="q6" value="3"><span>Often</span></label><label><input type="radio" name="q6" value="4"><span>Very often</span></label>
-          </div>
-        </fieldset>
-
-        <div class="screener-submit">
-          <button type="submit" disabled>View my screening result <span aria-hidden="true">→</span></button>
-          <p id="screener-progress" aria-live="polite">Please answer all six questions to view the result.</p>
-        </div>
-      </form>
-
-      <section class="screener-result" id="screener-result" aria-labelledby="screener-result-title" aria-live="polite" tabindex="-1" hidden>
-        <div class="screener-result__status"><span aria-hidden="true">✓</span><p>Screening result ready</p></div>
-        <h2 id="screener-result-title"></h2>
-        <p id="screener-result-copy"></p>
-        <p>If something is persistently affecting your life, it may still be worth discussing it with your GP or another appropriately qualified professional.</p>
-        <div class="screener-result__reflection">
-          <p class="micro-label">LOOK BEYOND THE SCORE</p>
-          <h3>Build the wider picture.</h3>
-          <p>The ADHD reflection: interactive record goes much further than this six-question result. It helps you work through the pattern for yourself: when it began, where it appears and what effect it has. It also gives you somewhere private to collect real-life examples that you can return to or take to a GP or assessment. It cannot confirm ADHD, but it can help you decide whether a fuller conversation or assessment feels worthwhile.</p>
-        </div>
-        <div class="screener-result__actions"><a href="../assessment-routes/">Read about assessment routes <span aria-hidden="true">→</span></a><a href="../reflection-record/">Open the interactive reflection record <span aria-hidden="true">→</span></a></div>
-        <button type="button" id="screener-reset">Start again</button>
-      </section>
+      <div class="screener-result screener-result--linkout">
+        <div class="screener-result__status"><span aria-hidden="true">↗</span><p>Official external resource</p></div>
+        <h2>Adult ADHD Self-Report Screener ASRS v1.1</h2>
+        <p>On the NYU page, open the English patient-facing six-question screener. Its shaded blocks show the screening ranges. A result can suggest that further investigation may be worthwhile, but it cannot diagnose ADHD or rule it out.</p>
+        <div class="screener-result__actions"><a href="https://license.tov.med.nyu.edu/product/asrs6Qscreener" rel="external">Open the official screener <span aria-hidden="true">↗</span></a><a href="../reflection-record/">Open the interactive reflection record <span aria-hidden="true">→</span></a></div>
+      </div>
     </div>
   </section>
 
   <section class="screener-method" aria-labelledby="screener-method-title">
     <div class="reading-column">
-      <p class="micro-label">HOW THE SCREENER WORKS</p>
-      <h2 id="screener-method-title">It is not a percentage score.</h2>
-      <p>The six-question Adult ADHD Self-Report Scale v1.1 Screener is Part A of the longer 18-question checklist. Each question has its own screening threshold. Four or more responses within the specified ranges indicate that further investigation may be worthwhile.</p>
-      <p>A higher number of qualifying answers does not prove ADHD or measure its severity, and a result below the threshold does not rule it out.</p>
+      <p class="micro-label">ABOUT THE INSTRUMENT</p>
+      <h2 id="screener-method-title">Use the result as a prompt, not a verdict.</h2>
+      <p>The six-question Adult ADHD Self-Report Scale v1.1 Screener is Part A of the longer 18-question checklist. The authorised patient-facing version includes its own shaded scoring ranges. It is the ASRS v1.1, not the separate, later ASRS-5.</p>
+      <p>A screening result does not prove ADHD, measure its severity or explain what is causing a difficulty. A result below the screening threshold does not rule ADHD out.</p>
       <details>
         <summary>Instrument and source</summary>
-        <p>Adult ADHD Self-Report Scale-V1.1 (ASRS-V1.1) Screener. © New York University and the President and Fellows of Harvard College.</p>
-        <p>Kessler, R. C. et al. (2005). The World Health Organization Adult ADHD Self-Report Scale (ASRS). <em>Psychological Medicine</em>, 35(2), 245–256.</p>
+        <p>The 6-question Adult Self-Report Scale-Version1.1 (ASRS-V1.1) Screener is a subset of the 18-question Adult ADHD Self-Report Scale-Version1.1 (Adult ASRSV1.1) Symptom Checklist. © New York University and the President and Fellows of Harvard College.</p>
+        <p>Developed by Lenard Adler, MD (New York University), and Ronald C. Kessler, PhD (Harvard). The NYU licensing page supplies the authorised patient-facing version, attribution and conditions of use.</p>
+        <p><a href="https://license.tov.med.nyu.edu/product/asrs6Qscreener" rel="external">NYU: instrument, conditions of use and patient-facing version</a></p>
+        <p>Kessler, R. C. et al. (2005). <a href="https://pubmed.ncbi.nlm.nih.gov/15841682/" rel="external">The World Health Organization Adult ADHD Self-Report Scale (ASRS): a short screening scale for use in the general population</a>. <em>Psychological Medicine</em>, 35(2), 245–256.</p>
       </details>
     </div>
   </section>
@@ -178,66 +123,10 @@
 
 <script>
 (function () {
-  var form = document.getElementById('adhd-screener');
-  var questions = Array.from(form.querySelectorAll('[data-question]'));
-  var submit = form.querySelector('[type="submit"]');
-  var progress = document.getElementById('screener-progress');
-  var result = document.getElementById('screener-result');
-  var resultTitle = document.getElementById('screener-result-title');
-  var resultCopy = document.getElementById('screener-result-copy');
-  var reset = document.getElementById('screener-reset');
-  var thresholds = [2, 2, 2, 3, 3, 2];
-
-  function answers() {
-    return questions.map(function (question) {
-      var selected = question.querySelector('input:checked');
-      return selected ? Number(selected.value) : null;
-    });
-  }
-
-  function updateProgress() {
-    var completed = answers().filter(function (answer) { return answer !== null; }).length;
-    submit.disabled = completed !== questions.length;
-    progress.textContent = completed === questions.length
-      ? 'All six questions answered.'
-      : completed === 0
-        ? 'Please answer all six questions to view the result.'
-        : completed + ' of six questions answered.';
-  }
-
-  form.addEventListener('change', updateProgress);
-  form.addEventListener('submit', function (event) {
-    event.preventDefault();
-    var values = answers();
-    if (values.some(function (answer) { return answer === null; })) return;
-
-    var qualifying = values.filter(function (answer, index) { return answer >= thresholds[index]; }).length;
-    var meetsThreshold = qualifying >= 4;
-    resultTitle.textContent = meetsThreshold
-      ? 'Your responses meet the screener threshold'
-      : 'Your responses do not meet the screener threshold';
-    resultCopy.textContent = meetsThreshold
-      ? 'Your answers fall within the range this brief screener identifies as warranting further investigation. This does not mean that you have ADHD. A diagnosis requires a fuller assessment of developmental history, current circumstances and day-to-day functioning.'
-      : 'Your answers do not fall within the range identified by this brief screener. That does not rule out ADHD or explain what you have noticed. A professional can consider the wider pattern and other possible explanations.';
-    result.hidden = false;
-    result.focus({ preventScroll: true });
-    result.scrollIntoView({ behavior: 'smooth', block: 'center' });
-  });
-
-  reset.addEventListener('click', function () {
-    form.reset();
-    result.hidden = true;
-    updateProgress();
-    questions[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
-    questions[0].querySelector('input').focus({ preventScroll: true });
-  });
-
   var dropdown = document.querySelector('.nav-dropdown');
   document.addEventListener('click', function (event) {
     if (dropdown && dropdown.open && !dropdown.contains(event.target)) dropdown.open = false;
   });
-
-  updateProgress();
 })();
 </script>
 </body>
