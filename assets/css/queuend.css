@@ -5914,3 +5914,10 @@ body.nhs-modal-open {
   .booking-page .booking-check__intro h2,
   .booking-page .booking-checklist strong { color: #000; }
 }
+
+.ai-note {
+  font-size: 8pt;
+  line-height: 1.4;
+  color: #66727a;
+  letter-spacing: 0.01em;
+}
