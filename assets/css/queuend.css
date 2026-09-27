@@ -5915,7 +5915,7 @@ body.nhs-modal-open {
   .booking-page .booking-checklist strong { color: #000; }
 }
 
-.ai-note {
+.article-body p.ai-note {
   font-size: 8pt;
   line-height: 1.4;
   color: #66727a;
