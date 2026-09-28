@@ -3696,6 +3696,7 @@ body.nhs-modal-open {
 .screener-result__reflection p:last-child { max-width: 710px; margin: 0; color: var(--body); font-size: 15.5px; line-height: 1.58; }
 .screener-result__actions { margin: 27px 0 22px; display: flex; flex-wrap: wrap; gap: 10px; }
 .screener-result__actions a { min-height: 45px; padding: 11px 14px; display: inline-flex; align-items: center; gap: 25px; border-radius: 8px; background: var(--teal-dark); color: var(--white); text-decoration: none; font-size: 14px; font-weight: 650; }
+.screener-result > .screener-result__window-note { max-width: 690px; margin: -7px 0 0; color: var(--muted); font-size: 13px; line-height: 1.45; }
 .screener-result #screener-reset { padding: 4px 0; border: 0; border-bottom: 1px solid currentColor; background: transparent; color: var(--teal-dark); cursor: pointer; font: 650 14px/1.2 var(--sans); }
 
 .screener-method { padding: 76px 0 96px; border-top: 1px solid var(--rule); background: var(--white); }
@@ -4465,7 +4466,7 @@ body.nhs-modal-open {
 }
 
 
-/* ===== contact form ======================================= */
+/* ===== contact ============================================ */
 
 .contact-page {
   background:
@@ -4535,79 +4536,28 @@ body.nhs-modal-open {
   font-size: 14px;
   line-height: 1.45;
 }
-.contact-form__field { margin-bottom: 23px; }
-.contact-form__pair {
-  display: grid;
-  grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr);
-  gap: 18px;
-}
-.contact-form__field label {
-  display: block;
-  margin-bottom: 7px;
-  color: var(--ink);
-  font-size: 15px;
-  font-weight: 680;
-  line-height: 1.35;
-}
-.contact-form__optional {
-  margin-left: 5px;
-  color: var(--muted);
-  font-size: 13px;
-  font-weight: 450;
-}
-.contact-form__field input,
-.contact-form__field select,
-.contact-form__field textarea {
-  width: 100%;
-  border: 1px solid #bdb8ae;
-  border-radius: 10px;
-  background: var(--white);
-  color: var(--ink);
-  font: 400 17px/1.45 var(--sans);
-}
-.contact-form__field input,
-.contact-form__field select { min-height: 48px; padding: 10px 12px; }
-.contact-form__field select {
-  appearance: auto;
-  cursor: pointer;
-}
-.contact-form__field textarea {
-  min-height: 174px;
-  padding: 12px 13px;
-  resize: vertical;
-}
-.contact-form__field input::placeholder { color: #858e95; opacity: 1; }
-.contact-form__field input:hover,
-.contact-form__field select:hover,
-.contact-form__field textarea:hover { border-color: #8f8b83; }
-.contact-form__field input:focus,
-.contact-form__field select:focus,
-.contact-form__field textarea:focus {
-  border-color: var(--teal);
-  outline: 3px solid rgba(147, 222, 197, .45);
-  outline-offset: 1px;
-}
-.contact-form__field input:user-invalid,
-.contact-form__field select:user-invalid,
-.contact-form__field textarea:user-invalid { border-color: #a64f45; }
-.contact-form__label-row {
+.contact-email__link {
+  min-height: 58px;
+  padding: 15px 17px;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
-  gap: 18px;
+  gap: 24px;
+  border-radius: 11px;
+  background: var(--teal-dark);
+  color: var(--white);
+  font-size: clamp(16px, 3.8vw, 20px);
+  font-weight: 700;
+  text-decoration: none;
 }
-.contact-form__label-row > span {
+.contact-email__link:hover { background: var(--navy); }
+.contact-email > p {
+  margin: 14px 1px 25px;
   color: var(--muted);
-  font: 500 11px/1.2 var(--mono);
+  font-size: 14px;
+  line-height: 1.5;
 }
-.contact-form__hint {
-  margin: 7px 0 0;
-  color: var(--muted);
-  font-size: 13.5px;
-  line-height: 1.45;
-}
-.contact-form__warning {
-  margin: 7px 0 23px;
+.contact-email__warning {
   padding: 16px 17px;
   display: grid;
   gap: 3px;
@@ -4618,84 +4568,7 @@ body.nhs-modal-open {
   font-size: 14px;
   line-height: 1.45;
 }
-.contact-form__warning strong { font-size: 14.5px; }
-.contact-form__privacy {
-  margin: 0 0 21px;
-  color: var(--muted);
-  font-size: 13.5px;
-  line-height: 1.5;
-}
-.contact-form__privacy a {
-  color: var(--teal-dark);
-  font-weight: 650;
-  text-underline-offset: 3px;
-}
-.contact-form__notice {
-  margin: 0 0 15px;
-  padding: 12px 14px;
-  border: 1px solid #d5c197;
-  border-radius: 9px;
-  background: #fbf4e5;
-  color: var(--ink);
-  font-size: 14px;
-  line-height: 1.45;
-}
-.contact-form__submit {
-  width: 100%;
-  min-height: 54px;
-  padding: 14px 18px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  border: 0;
-  border-radius: 11px;
-  background: var(--teal-dark);
-  color: var(--white);
-  cursor: pointer;
-  font: 700 16px/1.2 var(--sans);
-}
-.contact-form__submit:hover { background: var(--navy); }
-.contact-form__submit:disabled {
-  background: #71817f;
-  cursor: not-allowed;
-  opacity: .8;
-}
-.contact-form__verification {
-  margin: 10px 0 0;
-  color: var(--muted);
-  font-size: 12.5px;
-  line-height: 1.4;
-  text-align: center;
-}
-.contact-form__trap {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
-}
-.contact-result {
-  padding: 8px 0 3px;
-  outline: none;
-}
-.contact-result .micro-label { margin-bottom: 10px; }
-.contact-result p { margin-bottom: 20px; font-size: 17px; }
-.contact-result a {
-  color: var(--teal-dark);
-  font-weight: 700;
-  text-underline-offset: 4px;
-}
-.contact-result--error {
-  margin-top: 22px;
-  padding: 18px;
-  border-left: 4px solid #a64f45;
-  background: #f8e9e6;
-}
+.contact-email__warning strong { font-size: 14.5px; }
 .contact-afterword {
   max-width: 555px;
   margin: 23px auto 0;
@@ -4727,7 +4600,7 @@ body.nhs-modal-open {
     border-radius: 18px;
   }
   .contact-card__heading h2 { font-size: 26px; }
-  .contact-form__pair { grid-template-columns: 1fr; gap: 0; }
+  .contact-email__link { gap: 12px; }
 }
 
 @media print {
@@ -5915,6 +5788,7 @@ body.nhs-modal-open {
   .booking-page .booking-checklist strong { color: #000; }
 }
 
+/* Small editorial disclosure */
 .article-body p.ai-note {
   font-size: 8pt;
   line-height: 1.4;
