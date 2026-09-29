@@ -1,3 +1,4 @@
+@import url("./fonts.css");
 
    /* ============================================================
    ADHD Junction — refined editorial system
@@ -4711,6 +4712,43 @@ body.nhs-modal-open {
   color: var(--muted);
   font-size: 15px !important;
 }
+.analytics-choice {
+  margin: 22px 0 28px;
+  padding: 20px 21px;
+  border: 1px solid rgba(11, 123, 119, .25);
+  border-left: 4px solid var(--teal);
+  border-radius: 0 12px 12px 0;
+  background: rgba(227, 234, 231, .62);
+}
+.analytics-choice__status {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 18px;
+}
+.analytics-choice__status strong { font-size: 17px; }
+.analytics-choice__status span {
+  color: var(--teal-dark);
+  font: 650 11px/1.2 var(--mono);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.formalities-section .analytics-choice > p {
+  margin: 10px 0 16px;
+  font-size: 15.5px;
+  line-height: 1.55;
+}
+.analytics-choice button {
+  min-height: 42px;
+  padding: 10px 14px;
+  border: 1px solid var(--teal-dark);
+  border-radius: 8px;
+  background: var(--white);
+  color: var(--teal-dark);
+  cursor: pointer;
+  font: 700 14px/1.25 var(--sans);
+}
+.analytics-choice button:hover { background: var(--teal-dark); color: var(--white); }
 .formalities-contact-link {
   width: min(100%, 360px);
   margin: 23px 0 8px;
